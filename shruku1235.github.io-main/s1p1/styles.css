@@ -1,0 +1,52 @@
+
+@keyframes color {
+    0%   { background: #82655B; }
+    20%  { background: #40772B; }
+    40%  { background: #BFD641; }
+    60%  { background: #DEC045; }
+    80%  { background: #40772B; }
+    100% { background: #82655B; }
+  }
+  
+  body {
+    background: #40772B; 
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#styledtable {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#styledtable td {
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#styledtable img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
