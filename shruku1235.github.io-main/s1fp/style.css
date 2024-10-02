@@ -148,3 +148,9 @@ ol {
 div {
     padding-top: 50px;
 }
+
+#about img {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+}
