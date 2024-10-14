@@ -1,0 +1,66 @@
+body {
+    background-color: #AFE4F1;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.road-container {
+    text-align: center;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.expandable-image {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 1s ease, width 1s ease;
+}
+
+.expandable-image:hover {
+    transform: scale(1.2);
+
+}
+
+.hidden-checkbox:checked + label > .expandable-image {
+    width: 400px;
+    transform: scale(1); 
+}
+
+.radio-buttons {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease 0.5s;
+}
+
+.hidden-checkbox:checked ~ .radio-buttons {
+    opacity: 1;
+}
+
+.radio-buttons input[type="radio"] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#option1 {
+    top: 60px;
+    left: 50px;
+}
+
+#option2 {
+    top: 100px;
+    left: 150px;
+}
+
+#option3 {
+    top: 140px;
+    left: 250px;
+}
