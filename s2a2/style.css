@@ -7,8 +7,19 @@ body {
     align-items: center;
 }
 
-.road-container {
+.explore-text {
+    font-size: 30px;
+    color: #333;
     text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.road-container {
+    position: relative;
+    text-align: center;
+    display: inline-block;
 }
 
 .hidden-checkbox {
@@ -27,12 +38,15 @@ body {
 }
 
 .hidden-checkbox:checked + label > .expandable-image {
-    width: 400px;
+    width: 350px;
     transform: scale(1); 
 }
 
 .radio-buttons {
     opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,6 +55,7 @@ body {
 
 .hidden-checkbox:checked ~ .radio-buttons {
     opacity: 1;
+    pointer-events: all;
 }
 
 .radio-buttons input[type="radio"] {
@@ -48,19 +63,102 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    z-index: 1;
 }
 
-#option1 {
-    top: 60px;
-    left: 50px;
+#option1 { /*road*/
+    position: absolute;
+    top: 40%;
+    left: 47%;
 }
 
-#option2 {
-    top: 100px;
-    left: 150px;
+#option2 { /*bushes*/
+    position: absolute;
+    top: 65%;
+    left: 25%;
 }
 
-#option3 {
-    top: 140px;
-    left: 250px;
+#option3 { /*clouds*/
+    position: absolute;
+    top: 15%;
+    left: 62.5%;
+}
+
+#option4 { /*trees*/
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+
+.content-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 101;
+    display: block;
+}
+
+.small-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(172, 7, 7);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#option1:checked ~ .cover,
+#option2:checked ~ .cover,
+#option3:checked ~ .cover,
+#option4:checked ~ .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+}
+
+.cover {
+    display: none;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 165, 168, .65);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .explore-text {
+        display: none; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #23A4A8; 
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #316B6E; 
+    }
 }
