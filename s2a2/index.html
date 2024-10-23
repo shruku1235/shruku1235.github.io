@@ -72,21 +72,11 @@
     <script>
         function closeCover() {
             document.querySelectorAll('.radio-buttons input[type="radio"]').forEach(radio => radio.checked = false);
-
             const radioButtonsDiv = document.querySelector('.radio-buttons');
             radioButtonsDiv.style.opacity = '1';
             radioButtonsDiv.style.pointerEvents = 'all';
             
         }
-        document.querySelectorAll('.radio-buttons input[type="radio"]').forEach(radio => {
-            radio.addEventListener('change', function() {
-                const cover = this.nextElementSibling;
-                if (cover && cover.classList.contains('cover')) {
-                    document.querySelector('.radio-buttons').style.opacity = '0';
-                    document.querySelector('.radio-buttons').style.pointerEvents = 'none';
-                }
-            });
-        });
     </script>
 </body>
 </html>
