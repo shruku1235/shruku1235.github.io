@@ -29,22 +29,41 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    position: relative;
   }
   
   .cloud {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cloud img {
+    width: 100px; 
+    height: auto;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  .cloud:hover {
+  .cloud img:hover {
     transform: scale(1.1);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   }
+  
+  .music-icon {
+    position: absolute;
+    top: -10px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow to distinguish */
+    border-radius: 50%; /* Optional rounded shape */
+    padding: 5px; /* Adds space around the icon */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .music-icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
+  
   
