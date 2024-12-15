@@ -51,56 +51,22 @@ main p {
   transform: scale(1.1);
 }
 
-.music-icon {
-  position: absolute;
-  width: 50px;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 48px;
-  color: white;
-  padding: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  .book-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .book-icon:hover {
+    transform: scale(1.1);
+    color: #ffd700; /* Optional hover color for emphasis */
+  }
 
-.music-icon:hover {
-  transform: scale(1.01);
-}
-
-.puzzle-icon {
-  position: absolute;
-  top: -20px;
-  left: 53%;
-  transform: translateX(-50%);
-  font-size: 48px;
-  color: white;
-  text-decoration: none;
-  border-radius: 50%;
-  padding: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.puzzle-icon:hover {
-  transform: scale(1.01);
-}
-
-.coffee-icon {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 48px;
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.coffee-icon:hover {
-  transform: scale(1.01);
-}
-
-.web-icon {
+  .music-icon, .puzzle-icon, .coffee-icon, .web-icon, .mountain-icon, .clock-icon, .scissor-icon, .location-icon, .squiggly-icon {
     position: absolute;
     top: -20px;
     left: 50%;
@@ -109,92 +75,34 @@ main p {
     color: white;
     text-decoration: none;
     padding: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
   }
   
-  .web-icon:hover {
-    transform: scale(1.01);
+  .music-icon:hover, .puzzle-icon:hover, .coffee-icon:hover, .web-icon:hover, .mountain-icon:hover, .clock-icon:hover, .scissor-icon:hover, .location-icon:hover, .squiggly-icon:hover {
+    transform: translateX(-50%) scale(1.1); 
   }
 
-  .mountain-icon {
+  .back-button {
     position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  .mountain-icon:hover {
-    transform: scale(1.01);
+  .back-button:hover {
+    transform: scale(1.1);
+    background-color: #444;
   }
 
-  .clock-icon {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
   
-  .clock-icon:hover {
-    transform: scale(1.01);
-  }
-
-  .scissor-icon {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .scissor-icon:hover {
-    transform: scale(1.01);
-  }
-  
-  .location-icon {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .location-icon:hover {
-    transform: scale(1.01);
-  }
-  
-  .squiggly-icon {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .squiggly-icon:hover {
-    transform: scale(1.01);
-  }
   
   
   
