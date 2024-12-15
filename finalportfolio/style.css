@@ -63,7 +63,7 @@ main p {
   
   .book-icon:hover {
     transform: scale(1.1);
-    color: #ffd700; /* Optional hover color for emphasis */
+    color: #ffd700; 
   }
 
   .music-icon, .puzzle-icon, .coffee-icon, .web-icon, .mountain-icon, .clock-icon, .scissor-icon, .location-icon, .squiggly-icon {
